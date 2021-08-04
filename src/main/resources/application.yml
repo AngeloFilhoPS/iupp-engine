@@ -1,0 +1,18 @@
+micronaut:
+  application:
+    name: engineAngelo
+  server:
+    port: 8080
+
+endpoints:
+  health:
+    enabled: true
+
+cassandra:
+  default:
+    clusterName: '"myCluster"'
+    contactPoint:
+      -  localhost:9042
+    session-keyspace: clube
+    load-balancing-policy:
+      local-datacenter: datacenter1
